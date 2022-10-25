@@ -37,16 +37,11 @@ const team = [
 const list = document.querySelector(".member-list");
 let output;
 
-for (member of team) { 
-  for  (k in member) {
-    output = `
-    <ul>
-      <h2>Membro Team</h2>
-      <li>${member.name}</li>
-      <li>${member.role}</li>
-      <li>${member.image}</li>
-    </ul>
-    `;
+for (member of team) {
+  output = `<ul><h2>Membro Team</h2>`;
+  for (k in member) {
+    output += `<li>${member[k]}</li>`;
   }
+  output += `</ul>`
   list.innerHTML += output;
 }

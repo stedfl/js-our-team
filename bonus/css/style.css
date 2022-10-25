@@ -1,0 +1,41 @@
+body {
+  background-color: #f5f5f1;
+  font-family: 'Kalam', cursive;
+}
+
+.main-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+img {
+  transition: all 2s;
+}
+
+img:hover {
+  transform: scale(1.5);
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.sd-title h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.sd-badge {
+  font-size: 0.8rem;
+}

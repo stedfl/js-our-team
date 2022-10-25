@@ -35,20 +35,18 @@ const row = document.querySelector(".row");
 let output;
 
 for (member of team) {
-  for (k in member) {
-    output = `
-    <div class="col py-5">
-      <div class="card">
-        <div class="image-container">
-          <img src="./img/${member.image}" class="card-img-top" alt="${member.image}">
-        </div>
-        <div class="card-body text-center">
-          <h2 class="card-name fw-bold">${member.name}</h2>
-          <h3 class="card-role">${member.role}</h3>
-        </div>
+  output = `
+  <div class="col py-5">
+    <div class="card">
+      <div class="image-container">
+        <img src="./img/${member.image}" class="card-img-top" alt="${member.image}">
+      </div>
+      <div class="card-body text-center">
+        <h2 class="card-name fw-bold">${member.name}</h2>
+        <h3 class="card-role">${member.role}</h3>
       </div>
     </div>
-    `;
-  }
+  </div>
+  `;
   row.innerHTML += output;
 }
