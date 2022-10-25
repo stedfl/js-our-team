@@ -12,7 +12,7 @@ const team = [
   {
     name: "Walter Gordon",
     role: "Office Manager",
-    image: "walter-gordon-office.manager.jpg"
+    image: "walter-gordon-office-manager.jpg"
   },
   {
     name: "Angela Lopez",
@@ -30,3 +30,23 @@ const team = [
     image: "barbara-ramos-graphic-designer.jpg"
   }
 ];
+
+const row = document.querySelector(".row");
+let output;
+
+for (member of team) {
+  for (k in member) {
+    output = `
+    <div class="col-4 py-5">
+        <div class="card" style="width: 18rem;">
+          <img src="./img/${member.image}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-name">${member.name}</h5>
+            <p class="card-role">${member.role}</p>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+  row.innerHTML += output;
+}
