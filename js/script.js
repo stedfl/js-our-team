@@ -37,15 +37,17 @@ let output;
 for (member of team) {
   for (k in member) {
     output = `
-    <div class="col-4 py-5">
-        <div class="card" style="width: 18rem;">
-          <img src="./img/${member.image}" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-name">${member.name}</h5>
-            <p class="card-role">${member.role}</p>
-          </div>
+    <div class="col py-5">
+      <div class="card">
+        <div class="image-container">
+          <img src="./img/${member.image}" class="card-img-top" alt="${member.image}">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-name">${member.name}</h5>
+          <p class="card-role">${member.role}</p>
         </div>
       </div>
+    </div>
     `;
   }
   row.innerHTML += output;
