@@ -1,0 +1,9 @@
+body {
+  background-color: #f5f5f1;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
