@@ -43,8 +43,8 @@ for (member of team) {
           <img src="./img/${member.image}" class="card-img-top" alt="${member.image}">
         </div>
         <div class="card-body text-center">
-          <h5 class="card-name">${member.name}</h5>
-          <p class="card-role">${member.role}</p>
+          <h2 class="card-name fw-bold">${member.name}</h2>
+          <h3 class="card-role">${member.role}</h3>
         </div>
       </div>
     </div>
