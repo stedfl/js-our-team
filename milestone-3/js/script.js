@@ -52,10 +52,3 @@ for (member of team) {
   }
   row.innerHTML += output;
 }
-
-for (member of team) {
-  for (k in member) {
-    console.log(member[k] + member.name)
-  }
-}
-
